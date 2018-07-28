@@ -1,12 +1,10 @@
 // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyBa27gvCISh95m3XFf1vA4sYnOEVpJb8wg",
-    authDomain: "chat-ba37b.firebaseapp.com",
-    databaseURL: "https://chat-ba37b.firebaseio.com",
-    projectId: "chat-ba37b",
-    storageBucket: "chat-ba37b.appspot.com",
-    messagingSenderId: "151313050576"
+    apiKey: "AIzaSyClhlxMkx7r6Ph0B7o_Y0iaNvzS2Rqjt78",
+    authDomain: "homeworkce-e9008.firebaseapp.com",
+    databaseURL: "https://homeworkce-e9008.firebaseio.com",
+    projectId: "homeworkce-e9008",
+    storageBucket: "homeworkce-e9008.appspot.com",
+    messagingSenderId: "1077796373586"
   };
   firebase.initializeApp(config);
-
-  const database = firebase.database();

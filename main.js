@@ -5,24 +5,26 @@ jQuery(document).ready(function($){
     e.preventDefault();
 
 
-  var name = $('.registro .name').val();
-  var apellido = $('.registro .apellido').val();
-  var number = $('.registro.number').val();
-  var Email = $('.registro .Email').val();
+ var name = $('.registro .name ').val();
+ var apellido =$('.registro .Apellido');
+ var number = $('.registro .numbero').val();
   var edad = $('.registro .edad').val();
+  var genero =$('.registro .genero').val();
   var dep = $('.registro .dep').val();
-  var number = $('.registro .dep').val();
-  var des = $('.registro .des').val();
-  var ciu = $('.registro .ciu').val();
-
-  if (!name) {
+   var ciu = $('.registro .ciu').val();
+   var des = $('.registro .des').val();
+   var Email = $('.registro .Email').val();
+   var user = $('.registro .user').val();
+   var password =$('.registro .password').val();
+ 
+  if (!Email) {
     alert('debe ingresar el campo.');
-  } else if(!apellido){
+  } else if(!password){
     alert('debe ingresar el campo.');
   } else {
     firebase
     .auth()
-    .createUserWithNameAndApellido(name, apellido, number, Email, edad, dep, number)
+    .createUserWithEmailAndPassword(name, Apellido, Email, edad, dep, number, des, ciu)
     .then(function(){
       alert('bienvenido');
     })
@@ -38,14 +40,14 @@ jQuery(document).ready(function($){
 });
 
 jQuery(document).ready(function($){
-  $('.registro').on(
+  $('.login').on(
     'submit',
     function(e){
     e.preventDefault();
 alert('ingrsar evento');
-  var number = $('.numero.number').val();
-  var Email = $('.numero .Email').val();
-  var edad = $('.numero .edad').val();
+  var number = $('.login.number').val();
+  var Email = $('.login .Email').val();
+  var edad = $('.login .edad').val();
 
   if (!number) {
     alert('debe ingresar un numero.');

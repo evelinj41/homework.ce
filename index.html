@@ -7,45 +7,44 @@
 
 </head>
 <body>
-	<h1>Registro </h1>
+	<h1>Registro</h1>
 	     <br>
 	     <div class="container">
        	<div class="row">
 	     <div class="col-sm-6 col-sm-6">	
 	     	<form action="#" class="registro">
 	<label>Nombre</label>
-	<input type="text" name="name" class="name">
+	<input for="name" type="text" name="name" class="name">
 	<label>Apellidos</label>
-	<input type="text" name="apellido" class="apellido">
+	<input  for="Apelido"type="text" name="apellido" class="Apellido">
        <br>
    </div>
        
        		<div class="col-md-12 col-sm-6">
          
-     <label> Numero de celular</label>
-     <input type="number" name="number" class="number">
+     <label>numero de celular</label>
+     <input for="number"type="number" name="registro" class="number">
      <label>Telefono fijo</label>
-     <input type="number" name="numero" class="number">
+     <input type="number" name="registro">
          <br>
-      <label>Email</label>
-      <input type="text" name="Email" class="Email">
+      
        <label>Edad</label>
-      <input type="number" name="numero" class="edad">
+      <input for="edad" type="number" name="registro" class="edad">
            <br>
        </div>
        <div col-md-12 col-sm-6>
            <h6><label>Genero</label></h6>
-           <input type="radio" name="genero" class="genero"><label>Femenino</label>
-           <input type="radio" name="genero" class="genero"><label>Masculino</label>
-           <input type="radio" name="genero" class="genero"><label>Otro</label>
+           <input for="genero" type="radio" name="registro" class="genero"><label>Femenino</label>
+           <input for="genero" type="radio" name="registro" class="genero"><label>Masculino</label>
+           <input for="genero" type="radio" name="registro" class="genero"><label>Otro</label>
            <br>
        
        <label>Documento de identidad</label>
-       <input type="number" name="numero" class="number">
+       <input for="number" type="number" name="registro" class="number">
             <br>
 </div>
 <div col-md-12 col-sm-6>
-       <label class="dep">Departamento</label> </div>
+       <label for="dep" class="dep">Departamento</label> </div>
 <select>
   <option>amazonas</option>
   <option>antioquia</option>
@@ -81,7 +80,7 @@
   <option>vichada</option>
 </select>
 
-<label class="ciu">Ciudad</label>
+<label for="ciu" class="ciu">Ciudad</label>
   <select>
    <option value="1">Abriaquí</option>
 <option value="2">Acacías</option>
@@ -1155,36 +1154,45 @@
 <br>
 </div>
 <div class="col-md-12">	
-<label class="des">Descripcion</label>
-<input type="text" name="text">
+<label>Descripcion</label>
+<input for="des" type="text" name="registro" class="des">
 <br>
 </div>
 <div class="col-md-12">
-<label class="archivo">Inserte foto</label>
-<button>Subir archivo</button>
-<br>
+
 </div>
 <div class="col-sm-6">
 <h5><label class="ref">Referencias</label></h5>
 <label> Nombre</label>
-<input type="text" name="text" class="name">
+<input for="name" type="text" name="registro" class="name">
 <label>Apellidos</label>
-<input type="text" name="apellido" class="Apellido">
+<input  for="Apellido"type="text" name="registro" class="Apellido">
 <label>celular</label>
-<input type="number" name="numero" class="number">
+<input for="number" type="number" name="registro" class="number">
 <br>
 <label> Nombre</label>
-<input type="text" name="text" class="name">
+<input for="name" type="text" name="registro" class="name">
 <label>Apellidos</label>
-<input type="text" name="apellido" class="Apellido">
+<input for="Apellido" type="text" name="registro" class="Apellido">
 <label>Celular</label>
-<input type="number" name="numero" class="number">
+<input for="number" type="number" name="registro" class="number">
 <br>
+<div col-md-12 col-sm-6>
+	<h6>Usuario</h6>
+	<label>Email</label>
+      <input for="Email" type="text" name="registro" class="Email">
+      <br>
+	<label>Nombre De Usuario</label>
+	<input for="user" type="text" name="registro" class="user">
+	<br>
+	<label>Contraseña</label>
+	<input for="password" type="password" name="registro" class="password">
+	<br>
 
 
-<button onclick="location.href='#'">Registrarse</button> 
+<button onclick="location.href='#'" type="submit">Registrarse</button> 
 </form>
-</form>
+
 </div>
 
 
@@ -1197,7 +1205,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
-<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
 <script src="javascript/firebase.js"></script>
 <script src="javascript/main.js"></script>
 <link rel="stylesheet" type="text/css" href=""></link>
