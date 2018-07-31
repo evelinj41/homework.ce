@@ -5,26 +5,18 @@ jQuery(document).ready(function($){
     e.preventDefault();
 
 
- var name = $('.registro .name ').val();
- var apellido =$('.registro .Apellido');
- var number = $('.registro .numbero').val();
-  var edad = $('.registro .edad').val();
-  var genero =$('.registro .genero').val();
-  var dep = $('.registro .dep').val();
-   var ciu = $('.registro .ciu').val();
-   var des = $('.registro .des').val();
-   var Email = $('.registro .Email').val();
-   var user = $('.registro .user').val();
-   var password =$('.registro .password').val();
  
-  if (!Email) {
+   var email = $('.registro .email').val();
+   var password = $('.registro .password').val();
+ 
+  if (!email){
+    alert('debe ingresar email');
+  }else if(!password){
     alert('debe ingresar el campo.');
-  } else if(!password){
-    alert('debe ingresar el campo.');
-  } else {
+  }else {
     firebase
     .auth()
-    .createUserWithEmailAndPassword(name, Apellido, Email, edad, dep, number, des, ciu)
+    .createUserWithEmailAndPassword(email, password)
     .then(function(){
       alert('bienvenido');
     })
@@ -44,19 +36,20 @@ jQuery(document).ready(function($){
     'submit',
     function(e){
     e.preventDefault();
-alert('ingrsar evento');
-  var number = $('.login.number').val();
-  var Email = $('.login .Email').val();
-  var edad = $('.login .edad').val();
 
-  if (!number) {
-    alert('debe ingresar un numero.');
-  } else if(!Email){
-    alert('debe ingresar un email.');
+
+ 
+   var email = $('.login .email').val();
+   var password = $('.login .password').val();
+ 
+  if (!email){
+    alert('debe ingresar email');
+  }else if(!password){
+    alert('debe ingresar el campo.');
   }else {
     firebase
     .auth()
-    .createUserWithNumberAndEmail(number, Email, edad)
+    .signInWithEmailAndPassword(email, password)
     .then(function(){
       alert('bienvenido');
     })
