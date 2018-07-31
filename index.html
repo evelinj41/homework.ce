@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Homework.ce</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css"></link>
 
 </head>
 <body>
@@ -11,44 +12,47 @@
 	<br>
 	<div class="container">
 		<div class="row">
-			<form action="#" class="registro">
+			<form action="#" class="registro" class="login">
 				<div class="col-sm-6 col-sm-6">	
-					<label>Nombre</label>
-					<input for="name" type="text" name="name" class="name">
-					<label>Apellidos</label>
-					<input  for="Apelido"type="text" name="apellido" class="Apellido">
+					<label for="name">Nombre</label>
+					<input type="text" name="name" class="name">
+					<label for="apellido">Apellidos</label>
+					<input type="text" name="apellido" class="apellido">
 					<br>
-				</div>
+				
 
 				<div class="col-md-12 col-sm-6">
 
-					<label>numero de celular</label>
-					<input for="number"type="number" name="registro" class="number">
+					<label for="number">numero de celular</label>
+					<input type="number" name="registro" class="number">
 					<label>Telefono fijo</label>
 					<input type="number" name="registro">
 					<br>
-					<label>Edad</label>
-					<input for="edad" type="number" name="registro" class="edad">
+					<label for="edad" >Edad</label>
+					<input type="number" name="registro" class="edad">
 					<br>
 				</div>
 
 				<div class="col-md-12 col-sm-6">
 
 					<h6><label>Genero</label></h6>
-					<input for="genero" type="radio" name="registro" class="genero"><label>Femenino</label>
-					<input for="genero" type="radio" name="registro" class="genero"><label>Masculino</label>
-					<input for="genero" type="radio" name="registro" class="genero"><label>Otro</label>
+					<input  type="radio" name="registro" class="genero">
+					<label for="genero">Femenino</label>
+					<input  type="radio" name="registro" class="genero">
+					<label for="genero">Masculino</label>
+					<input type="radio" name="registro" class="genero">
+					<label for="genero">Otro</label>
 					<br>
-					<label>Documento de identidad</label>
-					<input for="number" type="number" name="registro" class="number">
+					<label for="number" >Documento de identidad</label>
+					<input type="number" name="registro" class="number">
 					<br>
 				</div>
 
 				<div class="col-md-12 col-sm-6">
 
 					<!--Departamentos-->
-					<label for="dep" class="dep">Departamento</label></div>
-					<select name="dep">						
+					<label for="dep"> Departamento</label>
+					<select name="registro" class="dep">						
 						<option>amazonas</option>
 						<option>antioquia</option>
 						<option>arauca</option>
@@ -83,8 +87,8 @@
 						<option>vichada</option>
 					</select>
 					<!--Ciudades-->
-					<label for="ciu" class="ciu">Ciudad</label>
-					<select name="ciu">
+					<label for="ciu">Ciudad</label>
+					<select name="registro" >
 						<option value="1">Abriaquí</option>
 						<option value="2">Acacías</option>
 						<option value="3">Acandí</option>
@@ -1157,46 +1161,47 @@
 					<br>
 				</div>
 				<div class="col-md-12">	
-					<label>Descripcion</label>
-					<input for="des" type="text" name="registro" class="des">
+					<label for="des">Descripcion</label>
+					<input  type="text" name="registro" class="des">
 					<br>
 				</div>
 				<div class="offset-md-12">
 				</div>
 				<div class="col-sm-6">
 					<h5><label class="ref">Referencias</label></h5>
-					<label> Nombre</label>
-					<input for="name" type="text" name="registro" class="name">
-					<label>Apellidos</label>
-					<input  for="Apellido"type="text" name="registro" class="Apellido">
-					<label>celular</label>
-					<input for="number" type="number" name="registro" class="number">
+					<label for="name"> Nombre</label>
+					<input type="text" name="registro" class="name">
+					<label for="apellido">Apellidos</label>
+					<input type="text" name="registro" class="apellido">
+					<label for="number">celular</label>
+					<input  type="number" name="registro" class="number">
 					<br>
 					<label> Nombre</label>
 					<input for="name" type="text" name="registro" class="name">
-					<label>Apellidos</label>
-					<input for="Apellido" type="text" name="registro" class="Apellido">
-					<label>Celular</label>
-					<input for="number" type="number" name="registro" class="number">
+					<label for="apellido" >Apellidos</label>
+					<input type="text" name="registro" class="apellido">
+					<label for="number">Celular</label>
+					<input  type="number" name="registro" class="number">
 					<br>
 				</div>
 
 				<div class="col-md-12 col-sm-6">
 					<h6>Usuario</h6>
-					<label>Email</label>
-					<input for="Email" type="text" name="registro" class="Email">
+					<label for="email">Email</label>
+					<input  type="text" name="email" class="email">
 					<br>
-					<label>Nombre De Usuario</label>
-					<input for="user" type="text" name="registro" class="user">
+					<label for="user">Nombre De Usuario</label>
+					<input  type="text" name="registro" class="user">
 					<br>
-					<label>Contraseña</label>
-					<input for="password" type="password" name="registro" class="password">
+					<label for="password">Contraseña</label>
+					<input type="password" name="registro" class="password">
 					<br>
-					<button type="submit" onclick="location.href='#'">Registrarse</button> 
+					<button type="submit">Registrarse</button> 
 				</div>
 			</form>
 		</div>
 	</div>
+</div>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -1205,7 +1210,7 @@
 	<script src="javascript/firebase.js"></script>
 	<script src="javascript/main.js"></script>
 
-	<link rel="stylesheet" type="text/css" href=""></link>
+	
 
 </body>
 </html>
