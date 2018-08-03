@@ -12,7 +12,7 @@ jQuery(document).ready(function($){
       if (!email){
         alert('debe ingresar email');
       }else if(!password){
-        alert('debe ingresar la contraseña.');
+        alert('debe ingresar el campo.');
       }else {
         firebase
         .auth()
@@ -47,7 +47,7 @@ jQuery(document).ready(function($){
       }else {
         firebase
         .auth()
-        .createUserWithEmailAndPassword(email, password)
+        .signInWithEmailAndPassword(email, password)
         .then(function(){
           alert('bienvenido');
         })
