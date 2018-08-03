@@ -1,5 +1,4 @@
-// Initialize Firebase
-  var config = {
+var config = {
     apiKey: "AIzaSyClhlxMkx7r6Ph0B7o_Y0iaNvzS2Rqjt78",
     authDomain: "homeworkce-e9008.firebaseapp.com",
     databaseURL: "https://homeworkce-e9008.firebaseio.com",
@@ -7,5 +6,28 @@
     storageBucket: "homeworkce-e9008.appspot.com",
     messagingSenderId: "1077796373586"
   };
-  firebase.initializeApp(config);
+firebase.initializeApp(config);
+
   const database = firebase.database();
+
+
+   var data ={
+    password:$('.password').val();
+    email:$('.email').val();
+    name:$('.name').val();
+    apellido:$('.apellido').val();
+    number:$('.number').val();
+    genero:$('.genero').val();
+    dep:$('dep').val();
+    ciu:$('.ciu').val();
+    des:$('.des').val(); 
+    tipo:$('tipo').val();  }; 
+
+  database.ref('/homeworkce-e9008/').push(data);
+    location.href="Adentro.html";
+    .catch(function(error) {
+      alert('no se registró con exito')
+      });       
+
+console.warn(data);
+    iterar(data);
