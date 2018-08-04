@@ -1,12 +1,14 @@
-<!DOCTYPE htm>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Homewor.ce</title>
+	<title>Homework.ce</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css"></link>
+
 </head>
 <body>
-	<h1>Registro</h1>
+	<h1>Registro Empleado</h1>
 	<br>
 	<div class="container">
 		<div class="row">
@@ -22,10 +24,10 @@
 
 					<div class="col-md-12 col-sm-6">
 
-						<label for="number">numero de celular</label>
-						<input type="number" name="registro" class="cel">
-						<label>Telefono fijo</label>
+						<label for="number" class="cel">numero de celular</label>
 						<input type="number" name="registro" class="number">
+						<label>Telefono fijo</label>
+						<input type="number" name="registro">
 						<br>
 						<label for="edad" >Edad</label>
 						<input type="number" name="registro" class="edad">
@@ -1167,16 +1169,24 @@
 					<div class="offset-md-12">
 					</div>
 					<div class="col-sm-6">
-						<h6>Tipo De Domicilio</h6>
-						<label>Seleccione el tipo de domicilio</label>
-								<input type="radio" name="tipo" class="tipo"><label>Casa</label>
-								<input type="radio" name="tipo" class="tipo"><label>Empresa</label>
-								<input type="radio" name="tipo" class="tipo"><label>Finca</label>
-								<input type="radio" name="tipo" class="tipo"><label>Apartamento</label>
-								<input type="radio" name="tipo" class="tipo"><label>Otro</label>
-							</div>
+						<h5>Referencias</h5>
+						<label for="name"> Nombre</label>
+						<input type="text" name="registro" class="nombre">
+						<label for="apellido">Apellidos</label>
+						<input type="text" name="registro" class="apellid">
+						<label for="number">celular</label>
+						<input  type="number" name="registro" class="numero">
+						<br>
+						<label> Nombre</label>
+						<input for="name" type="text" name="registro" class="nickname">
+						<label for="apellido" >Apellidos</label>
+						<input type="text" name="registro" class="apelli">
+						<label for="number">Celular</label>
+						<input  type="number" name="registro" class="numbero">
+						<br>
+					</div>
 
-					<div class="col-md-12">
+					<div class="col-md-12 col-sm-6">
 						<h6>Usuario</h6>
 						<label for="email">Email</label>
 						<input  type="text" name="email" class="email">
@@ -1187,16 +1197,24 @@
 						<label for="password">Contraseña</label>
 						<input type="password" name="registro" class="password">
 						<br>
-						<button type="submit">Registrarse</button> 
-						<button onclick="location.href='Inicio.html'" class="button">
+						<button type="submit" class="button">Registrarse</button> 
+						<button onclick="location.href='Inicio.html'">
 							Inicio
 						</button>
-								</body>
-								<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-								<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-								<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-								<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
-	                           <script src="javascript/firebase.js"></script>
-	                           <script src="javascript/main.js"></script>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 
-								</html>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+	<script src="javascript/firebase.js"></script>
+	<script src="javascript/main.js"></script>
+
+	
+
+</body>
+</html>
