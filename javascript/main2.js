@@ -1,30 +1,32 @@
-jQuery(document).ready(function($){
-  
-  $('.login').on(
+jjQuery(document).ready(function($){
+  $('.registro').on(
     'submit',
     function(e){
       e.preventDefault();
 
-      var email = $('.login .email').val();
-      var password = $('.login .password').val();
+
+
+      var email = $('.registro .email').val();
+      var password = $('.registro .password').val();
 
       if (!email){
         alert('debe ingresar email');
       }else if(!password){
-        alert('debe ingresar contraseña.');
+        alert('debe ingresar el campo.');
       }else {
         firebase
         .auth()
-        .signInWithEmailAndPassword(email, password)
+        .createUserWithEmailAndPassword(email, password)
         .then(function(){
           alert('bienvenido');
-          location.href="Adentro.html";
         })
         .catch(function(error) {
           alert('no eres bienvenido');
 
         });
       }
-    });
+    }
+
+    );
 
 });
