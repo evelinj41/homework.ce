@@ -43,7 +43,7 @@ $('.button').on('click', function( event ){
   });
 }); 
 
-$('.button').on('click', function( event ){
+$('.buton').on('click', function( event ){
   event.preventDefault();
 
   var dato = {
